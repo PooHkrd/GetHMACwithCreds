@@ -1,6 +1,7 @@
 # GetHMACwithCreds
 Custom connector for Microsoft Power BI. Creates HMAC for the text and secret key.
 
+Пользовательский коннектор для Microsoft Power BI
 Как подключить коннектор:
 Скачайте файл: https://github.com/PooHkrd/GetHMACwithCreds/blob/master/GetHMACwithCreds.mez
 
