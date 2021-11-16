@@ -1,7 +1,20 @@
 # GetHMACwithCreds
-Custom connector for Microsoft Power BI. Creates HMAC for the text and secret key.
+ENG. Custom connector for Microsoft Power BI. Creates HMAC for the text and secret key.
 
-Пользовательский коннектор для Microsoft Power BI. Создает HMAC (hash-based message authentication code) для текста и секретного ключа.
+How to use the connector:
+Download the file: https://github.com/PooHkrd/GetHMACwithCreds/blob/master/GetHMACwithCreds.mez
+
+Move it to a folder C:\Users\USERNAME\Documents\Power BI Desktop\Custom Connectors by substituting the USERNAME of your credentials. If you have OneDrive installed, then use the following folder: C:\Users\USERNAME\OneDrive\Documents\Power BI Desktop\Custom Connectors. Attention! If the OneDrive application is installed, Power BI may not detect the connector at the standard folder.
+
+Open Power BI, go to File -> Options and Settings -> Settings -> Global -> Security, select "Allow downloading of any extension without checks and warnings".
+
+Click on the "Get data" button, in the Other section, select GetHMACwithCreds.
+
+In order for the connector to work in the PBI Service cloud, download and install the Power BI personal gateway: https://go.microsoft.com/fwlink/?LinkId=2116848&clcid=0x419. Log in to the gateway with your Power BI account. Next, check whether the gateway sees the connector by selecting "Connectors" in the gateway in the left menu. After that, you will need to configure the connection to the connector according to the instructions: https://docs.microsoft.com/ru-ru/power-bi/connect-data/service-gateway-custom-connectors
+Attention! If the Anonymous authorization method is selected when setting up the connection, then it is necessary to mark the "Skip Test Connection" checkbox, otherwise the connection may give an error. If you skip testing, the connector will work correctly in the cloud.
+Custom connector do not work in data flows.
+
+RUS. Пользовательский коннектор для Microsoft Power BI. Создает HMAC (hash-based message authentication code) для текста и секретного ключа.
 Как подключить коннектор:
 Скачайте файл: https://github.com/PooHkrd/GetHMACwithCreds/blob/master/GetHMACwithCreds.mez
 
